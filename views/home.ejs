@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
   </head>
-  <body style="background-color: #FFE3FA;">
+  <body style="background-color: #cce5ff;">
 
 <br/>
     <div class="container">
@@ -34,16 +34,28 @@
               <br/>Reportes
             </a>
           </td>
-        </tr>
+          <td>
+                <a  href="/empleados/homeEmpleados">
+            <img src="/img/empleados.png"  alt="">
+            <br/>Empleados
+          </a>
+          </td>
+      </tr>
+
+
+
       </table><br/><hr/>
       <p align="center">
         <img src="/img/back.png"  alt=""><br/>
         <a  href="/main/home">Regresar</a>
         </p>
+        <div id="pie"><%- include ('partials/footer.ejs') %></div></div>
+
+
+
     </div>
   </div>
 
-    <div id="pie"><%- include ('partials/footer.ejs') %></div></div>
 
   </body>
 </html>

@@ -12,3 +12,7 @@ div#pie{
   color:black;
   display: inline-block;
 }
+
+body{
+  background-color: #cce5ff;
+}

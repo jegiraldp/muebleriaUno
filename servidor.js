@@ -1,13 +1,18 @@
 const express = require('express');
 const mainRoutes=require('./routes/routes-main');
 const empleadosRoutes=require('./routes/routes-empleados');
+var methodOverride = require('method-override');
+const bodyParser = require('body-parser');
 
 //init
 const app = express();
+require("./database/database");
 
 //use
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
+app.use(methodOverride('_method'));
+app.use(bodyParser.urlencoded({extended:false}));
 app.use(express.static('public'));
 app.use('/',mainRoutes);
 app.use('/empleados',empleadosRoutes);
